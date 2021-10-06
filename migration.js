@@ -9,10 +9,10 @@ CREATE TABLE IF NOT EXISTS "Teachers"(
 `;
 
 pool
-.query(createTeacher)
-.then((data) =>{
-    console.log(data, 'success create table');
-})
-.catch((err)=>{
-    console.log(err, 'error create table teacher');
-});
+  .query(createTeacher)
+  .then((data) => {
+    console.log(data, "success create table");
+  })
+  .catch((err) => {
+    console.log(err, "error create table teacher");
+  });
